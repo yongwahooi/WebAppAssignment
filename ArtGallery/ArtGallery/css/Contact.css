@@ -36,6 +36,34 @@
 	margin-bottom: -10px;
 }
 
+#content1 {
+    width: 35%;
+    margin-right: 150px;
+    margin-top: 50px;
+    line-height: 2em;
+    float: right;
+    background-color: white;
+    text-align: justify;
+}
+
+#content_img1 {
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+
+#img_scroll2 {
+    background-image: url('../Images/map_my.JPG');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1349 px 500px;
+    margin-top: 500px;
+}
+
+
 #content{
 	width: 35%;
 	margin-left: 200px;

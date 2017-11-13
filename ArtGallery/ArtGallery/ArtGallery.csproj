@@ -86,6 +86,7 @@
     <Content Include="Images\buyer.jpg" />
     <Content Include="Images\contact.jpg" />
     <Content Include="Images\contact_hk.JPG" />
+    <Content Include="Images\contact_my.jpg" />
     <Content Include="Images\contact_ny.JPG" />
     <Content Include="Images\contact_paris.JPG" />
     <Content Include="Images\content_1.jpg" />
@@ -104,6 +105,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\logo_2.png" />
     <Content Include="Images\map_hk.JPG" />
+    <Content Include="Images\map_my.JPG" />
     <Content Include="Images\map_ny.jpg" />
     <Content Include="Images\map_paris.jpg" />
     <Content Include="Images\meeting.jpg" />

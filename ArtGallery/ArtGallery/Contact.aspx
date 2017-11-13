@@ -8,7 +8,21 @@
     	<h1>CONTACT</h1>
     	<p>we would love to hear from you.</p>
     </div>
-	<div id="content">
+    	<div id="content1">
+		<h2>MALAYSIA</h2>
+		<p class="textbold">ADDRESS:</p>
+		<p>Jalan Sultan Hishamuddin Kuala Lumpur, Malaysia</p>
+		<p class="textbold">PHONE:</p>
+		<p>+60048232420</p>
+		<p class="textbold">BUSINESS HOUR:</p>
+		<p>MONDAY - SATURDAY, 11am - 7pm</p>
+    	</div>
+	<div id="content_img1">
+		<img src="Images/contact_my.jpg" width="350px" height="350px" />
+	</div>
+	<div id="img_scroll2">
+    </div>	
+    <div id="content">
 		<h2>HONG KONG</h2>
 		<p class="textbold">ADDRESS:</p>
 		<p>50 CONNAUGHT ROAD CENTRAL, 17TH FLOOR - HONG KONG</p>

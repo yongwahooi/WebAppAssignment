@@ -62,35 +62,35 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="TextBoxcontactno" runat="server" Width="177px"></asp:TextBox>
                <script>
-        $(function () {
-            $("#TextBoxcontactno").blur(function () {
-                debugger;
-                   var inputtxt = $("#TextBoxcontactno").val();
-                phonenumber(inputtxt);
-            })
-            $('form input[name="email"]').blur(function () {
-                var email = $(this).val();
-                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/igm;
-                if (re.test(email)) {
-                    $('.msg').hide();
-                    $('.success').show();
-                } else {
-                    $('.msg').hide();
-                    $('.error').show();
-                }
-            })
-        });
-        function phonenumber(inputtxt) {
-            var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-            if (inputtxt.match(phoneno)) {
-                $("#TextBoxemail").text("Valid Phone Number");
-                return true;
-            }
-            else {
-                $("#TextBoxemail").text("Invalid Phone Number");
-                return false;
-            }
-        }
+                   $(function () {
+                       $("#TextBoxcontactno").blur(function () {
+                           debugger;
+                           var inputtxt = $("#TextBoxcontactno").val();
+                           phonenumber(inputtxt);
+                       })
+                       $('form input[name="email"]').blur(function () {
+                           var email = $(this).val();
+                           var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/igm;
+                           if (re.test(email)) {
+                               $('.msg').hide();
+                               $('.success').show();
+                           } else {
+                               $('.msg').hide();
+                               $('.error').show();
+                           }
+                       })
+                   });
+                   function phonenumber(inputtxt) {
+                       var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+                       if (inputtxt.match(phoneno)) {
+                           $("#TextBoxemail").text("Valid Phone Number");
+                           return true;
+                       }
+                       else {
+                           $("#TextBoxemail").text("Invalid Phone Number");
+                           return false;
+                       }
+                   }
     </script>
                     </td>
             </tr>
