@@ -68,6 +68,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AccountLogin.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="buyersignup.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\About.css" />
