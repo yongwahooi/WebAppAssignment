@@ -12,4 +12,4 @@ TO-DO list:
   - Post their art works
   - View their art works
   - Handle the number of stock sales
-4 Databse
+4. Databse
