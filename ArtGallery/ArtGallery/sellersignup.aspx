@@ -10,7 +10,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img src="Images/content_2.jpg" width="1349px" height="550px" />
+    <img src="Images/signup.jpg" width="1349px" height="350px" />
     <div id="content" >
 
         <br />

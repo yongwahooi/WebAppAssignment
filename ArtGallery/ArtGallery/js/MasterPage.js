@@ -1,7 +1,7 @@
 ﻿$(document).ready(function(){
 	$(window).on("scroll",function(){
   	var wn = $(window).scrollTop();
-    if(wn > 200){
+    if(wn > 150){
     	$("header").css("background","#ffffff");
     	$("header").css("height","45px");
     	$("header").css("box-shadow","1px 4px 3px #585858");
