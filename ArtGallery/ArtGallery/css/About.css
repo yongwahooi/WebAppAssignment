@@ -1,0 +1,132 @@
+﻿#img_scroll{
+    background-image: url("../Images/about_us.jpg");
+    height: 550px; 
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1349 px 300px;
+	color: white;
+}
+
+#img_scroll h1,
+#img_scroll p{
+	z-index: 1;
+	margin: 0;
+	padding: 0;	
+	position:absolute;
+	text-align: center;
+	width: 1349px;
+	letter-spacing: 5px;
+}
+
+#img_scroll h1{
+	font-size:3em;
+	font-weight:lighter;
+	margin-top: 250px;
+	margin-bottom: 50px;
+}
+
+#img_scroll p{
+	font-size:1.3em;
+	margin-top: 330px;
+}
+
+#content{
+	width: 35%;
+	padding-left: 150px;
+	margin-top: 50px;
+	line-height: 2em;
+	float: left;
+	background-color: white;
+	text-align:justify;
+}
+
+#content_img{
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+#img_scroll_1{
+    background-image: url("../Images/history.jpg");
+    height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1349 px 300px;
+	color: white;
+	margin-top: 500px;
+}
+
+#img_scroll_1 h1,
+#img_scroll_1 p{
+	z-index: 1;
+	margin: 0;
+	padding: 0;	
+	position:absolute;
+	text-align: center;
+	width: 1349px;
+	letter-spacing: 5px;
+}
+
+#img_scroll_1 h1{
+	font-size:3em;
+	font-weight:lighter;
+	margin-top: 250px;
+	margin-bottom: 20px;
+}
+
+#img_scroll_1 p{
+	font-size:1.3em;
+	margin-top: 330px;
+}
+
+
+#content_1{
+	width: 45%;
+	margin-right: 50px;
+	margin-top: 30px;
+	line-height: 2em;
+	float: right;
+	background-color: white;
+	text-align:justify;
+}
+
+#content_img_1{
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.year{
+	opacity: 0.5;
+	font-size: 1.5em;
+}
+
+#year1{
+	margin-top: 600px;
+	margin-left: 250px;
+}
+
+.text{
+	margin-left: 250px;
+	width: 65%;
+	line-height: 2em;
+	text-align:justify;
+}
+
+#content_2 p{
+	width: 35%;
+	margin-left: 150px;
+	line-height: 2em;
+	float: left;
+	background-color: white;
+	margin-top: 50px;
+	text-align:justify;
+}
+
+#content_img_2{
+	float: right;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}

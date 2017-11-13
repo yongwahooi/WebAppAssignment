@@ -1,0 +1,262 @@
+﻿#slider {
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 1000px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 1px 4px 3px #585858;
+}
+
+    #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 1349px;
+        height: 550px;
+        list-style-type: none;
+    }
+
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 1349px;
+            height: 550px;
+            text-align: center;
+        }
+
+a.control_prev,
+a.control_next {
+    position: absolute;
+    z-index: 30;
+    display: block;
+    padding: 20px 15px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    top: 280px;
+}
+
+    a.control_prev:hover,
+    a.control_next:hover {
+        padding: 20px 5px;
+    }
+
+a.control_next {
+    right: 0;
+}
+
+#slider_desc {
+    height: 150px;
+    width: 1349px;
+    z-index: 20;
+    position: absolute;
+    margin-top: -400px;
+}
+
+#slider_title,
+#slider_detail {
+    display: block;
+    position: relative;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+
+#slider_title {
+    margin-top: 80px;
+    font-size: 3.5em;
+}
+
+#slider_detail {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+#slider_title,
+#slider_detail {
+    opacity: 1;
+    transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+}
+
+#slider_nav {
+    margin: auto;
+    margin-top: 25px;
+    width: 16%;
+    text-align: center;
+}
+
+#slider_nav ul {
+     background: rgba(0, 0, 0, 0.75);
+}
+
+#slider_nav a {
+     background: #0d0d0d;
+     padding: 5px 12px;
+}
+
+ #slider_nav a:hover {
+    background: #FE9A2E;
+}
+
+ #content{
+     width: 1349px;
+ }
+
+#content h1 {
+    margin: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#content_desc {
+    width: 1349px;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 120px;
+}
+
+.content_css h1,
+.content_css h2 {
+    font-weight: lighter;
+}
+
+.content_css h2 {
+    color: #999999;
+    font-size: 1.3em;
+    top: -10px;
+    margin-top: -15px;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+}
+
+#content_desc hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #999999;
+    margin-left: 630px;
+    padding: 0;
+    width: 80px;
+    margin-top: 20px;
+}
+
+#content_desc p {
+    color: #3333FF;
+    margin-top: -5px;
+}
+
+.content_css a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #3333FF;
+}
+
+#content_desc1 {
+    width: 35%;
+    text-align: left;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 800px;
+}
+
+#h1_css {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+#content_desc1 p {
+    padding-top: 30px;
+}
+
+#content_desc2 {
+    width: 28%;
+    text-align: right;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 150px;
+    padding-right: 850px;
+    padding-left: 30px;
+}
+
+    #content_desc2 h2,
+    #content_desc1 h2 {
+        line-height: 1.5em;
+    }
+
+#img1,
+#img2 {
+    padding-left: 150px;
+    margin-bottom: 50px;
+}
+
+#img_desc {
+    color: white;
+    text-align: center;
+    width: 20%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 220px;
+}
+
+#img_desc h2,
+#img_desc h3 {
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+#img_desc a {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+
+#img_desc1 {
+    color: white;
+    text-align: center;
+    width: 20%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 100px;
+    margin-left: 780px;
+}
+
+#img_desc1 h2,
+#img_desc1 h3 {
+     font-weight: lighter;
+     opacity: 0.8;
+     line-height: 1.1em;
+}
+
+#img_desc1 a {
+      opacity: 0.7;
+      color: white;
+      text-decoration: none;
+}
+

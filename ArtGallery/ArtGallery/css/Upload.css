@@ -1,0 +1,37 @@
+﻿body {
+}
+
+input[type=file], select, textarea, textbox, input[type=text] {
+    width: 100%;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file], select {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+    input[type=submit]:hover {
+        background-color: #1c1919;
+    }
+
+.fileUpload {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px 0px;
+}

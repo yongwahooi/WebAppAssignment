@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ArtGallery.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.11.4.js" type="text/javascript"></script>
+    <script src="js/MasterPage.js" type="text/javascript"></script>
+    <link href="css/MasterPage.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="Images/icon.png" />
+    <title>laGalerie</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	<header>
+		<img id="logo" src="Images/logo.png"/>	
+		<div class="nav">
+            <ul>
+                <li><a href="HomePage.aspx" id="home">HOME</a></li>
+                <li><a href="#" id="news">NEWS</a></li>
+                <li><a href="#" id="artist">ARTIST</a></li>
+                <li><a href="#" id="gallery">GALLERY</a></li>
+                <li><a href="About.aspx" id="about">ABOUT US</a></li>                
+                <li><a href="Contact.aspx" id="contact">CONTACT US</a></li>
+                <li><a href="#" id="login">LOG IN</a></li>
+            </ul>
+            <hr id="line" />
+        </div>
+	</header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+	    <div id="footer_img">
+	    	<p><img id="fb" src="Images/facebook.png" />
+	    	<img id="tw" src="Images/twitter.png" />
+	    	<img id="in" src="Images/instagram.png" /></p>
+	    </div>
+    	<table>
+			<tr>
+	        	<td>SIGN UP</td>
+	            <td>NEWS</td>
+	            <td class="td1">CONTACT US</td>
+	        </tr>
+	        <tr>
+	        	<td>FEEDBACK</td>
+	            <td>ARTIST</td>
+	            <td class="td1">&#9993; EMAIL</td>
+	            <td>customerservice@lagalerie.com.my</td>
+	        </tr>
+			<tr>
+	        	<td>ABOUT US</td>
+	            <td>GALLERY</td>
+	            <td class="td1">&#9743; PHONE</td>
+	            <td>+12128122902 (New York)</td>
+	        </tr>
+			<tr>
+	        	<td></td>
+	            <td>GET HELP</td>
+	            <td class="td1">&#128224; FAX</td>
+	            <td>+12128122902 (New York)</td>
+	        </tr>
+
+    	</table>
+    	<hr id="footer_hr" />    
+        <p>
+            COPYRIGHT &copy; 2017 la &middot; Galerie. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+    </form>
+</body>
+</html>
