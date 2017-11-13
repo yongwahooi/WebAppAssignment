@@ -79,6 +79,7 @@
     <Content Include="css\Contact.css" />
     <Content Include="css\HomePage.css" />
     <Content Include="css\MasterPage.css" />
+    <Content Include="css\signup.css" />
     <Content Include="css\Upload.css" />
     <Content Include="forgotpassword.aspx" />
     <Content Include="HomePage.aspx" />
@@ -89,6 +90,8 @@
     <Content Include="Images\5.jpg" />
     <Content Include="Images\about_us.jpg" />
     <Content Include="Images\buyer.jpg" />
+    <Content Include="Images\cart_buyer.jpg" />
+    <Content Include="Images\cart_seller.jpg" />
     <Content Include="Images\contact.jpg" />
     <Content Include="Images\contact_hk.JPG" />
     <Content Include="Images\contact_my.jpg" />
@@ -121,6 +124,7 @@
     <Content Include="Images\password_icon_1.png" />
     <Content Include="Images\seller.jpg" />
     <Content Include="Images\signup.jpg" />
+    <Content Include="Images\signup_1.jpg" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\twitter_1.png" />
     <Content Include="Images\uploadImage.png" />

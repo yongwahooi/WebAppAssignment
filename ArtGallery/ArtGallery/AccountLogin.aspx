@@ -8,7 +8,7 @@
     <div id="body">
     <div id="img_scroll">
     	<h1>LOGIN</h1>
-    	<p>welcome to join our big family</p>
+    	<p>welcome to join our big family.</p>
     </div>
     <div id="login_acc">
     	<h2>ALREADY HAVE AN ACCOUNT?</h2>
