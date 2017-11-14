@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="ArtGallery.Upload" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/Upload.css" rel="stylesheet" type="text/css" />
+    <%--<link href="css/Upload.css" rel="stylesheet" type="text/css" />--%>
     <script src="js/Upload.js" type="text/javascript"></script>
     <script lang="javascript" type="text/javascript">
 
