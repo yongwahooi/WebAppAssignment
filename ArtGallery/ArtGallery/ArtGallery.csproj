@@ -77,6 +77,7 @@
     <Content Include="css\About.css" />
     <Content Include="css\AccountLogin.css" />
     <Content Include="css\Contact.css" />
+    <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
     <Content Include="css\MasterPage.css" />
     <Content Include="css\signup.css" />
@@ -106,6 +107,7 @@
     <Content Include="Images\content_img_2.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\facebook_1.png" />
+    <Content Include="Images\forget_password.jpg" />
     <Content Include="Images\history.jpg" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\instagram.png" />
@@ -129,6 +131,7 @@
     <Content Include="Images\twitter_1.png" />
     <Content Include="Images\uploadImage.png" />
     <Content Include="js\AccountLogin.js" />
+    <Content Include="js\forgotpassword.js" />
     <Content Include="js\HomePage.js" />
     <Content Include="js\jquery-2.2.0.min.js" />
     <Content Include="js\jquery-ui-1.11.4.js" />
