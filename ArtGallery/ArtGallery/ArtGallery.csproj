@@ -117,6 +117,7 @@
     <Content Include="js\jquery-2.2.0.min.js" />
     <Content Include="js\jquery-ui-1.11.4.js" />
     <Content Include="js\MasterPage.js" />
+    <Content Include="js\Upload.js" />
     <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -205,7 +206,9 @@
       <DependentUpon>Upload.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UploadedImages\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
