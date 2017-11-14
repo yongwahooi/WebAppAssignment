@@ -1,9 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="ArtGallery.Upload" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--<link href="css/Upload.css" rel="stylesheet" type="text/css" />--%>
     <script src="js/Upload.js" type="text/javascript"></script>
-    <script lang="javascript" type="text/javascript">
-
+    <link href="css/Upload.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
         function UploadFile() {
             var value = $("#FileUploadPicture").val();
             if (value != '') {
@@ -36,11 +35,33 @@
                     <br/>
                     <textarea ID="TextAreaDescription" cols="20" rows="2" maxlength="100" placeholder="Product Description (max 100 words) "></textarea>
                     <br />
-                    <input type="text" id="TextBoxPrice" placeholder="Product Price RM "/>
+                    <script>
+                        
+                        function AppendDot(textbox) {
+                            var text = textbox.value;
+                            document.getElementById("<%=TextBoxPrice.ClientID %>").value = "";
+                            //var price = 0;
+
+                            if (text.indexOf(".") == -1) {
+                                document.getElementById("<%=TextBoxPrice.ClientID %>").value =text + ".00";
+                            }
+                            else {
+                                if ((text.length-text.indexOf(".")) == 2) {
+                                    document.getElementById("<%=TextBoxPrice.ClientID %>").value = text + "0";
+                                }
+                                else { document.getElementById("<%=TextBoxPrice.ClientID %>").value = text;}                                 
+                            }
+                            
+                            
+                        }
+
+                    </script>
+                        <%--<input type="text" id="TextBoxPrice" placeholder="Product Price RM " onblur="process();" />--%>
+                        <asp:TextBox runat="server" ID="TextBoxPrice" placeholder="Product Price RM " onchange="AppendDot(this);"></asp:TextBox >
                     <br />
-                    <asp:Label ID="lblCategory" runat="server" Text="Category: "></asp:Label>
+                    <asp:Label ID="lblCategory" runat="server" Text="Category: " ></asp:Label>
                     <br />
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="DropDownList1">
                         <asp:ListItem>Cubism</asp:ListItem>
                         <asp:ListItem>Fauvism</asp:ListItem>
                         <asp:ListItem>Abstract Art</asp:ListItem>
@@ -54,7 +75,7 @@
                         <asp:ListItem>Other</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:Button ID="ButtonSubmit"  Text="Submit"  runat="server" OnClick="Page_Load" > </asp:Button><input id="Reset" type="reset" value="Reset" />
+                    <asp:Button ID="ButtonSubmit" CssClass="ButtonSubmit" Text="Submit"  runat="server" OnClick="Page_Load" > </asp:Button><input id="Reset" class="Reset" type="reset" value="Reset" />
                     <br/>
                     <%--<asp:Label ID="lblUploadStatus" runat="server" Text="Label" Font-Size="Medium"></asp:Label>--%>
                 

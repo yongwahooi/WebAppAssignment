@@ -77,11 +77,11 @@
     <Content Include="css\About.css" />
     <Content Include="css\AccountLogin.css" />
     <Content Include="css\Contact.css" />
+    <Content Include="css\Upload.css" />
     <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
     <Content Include="css\MasterPage.css" />
     <Content Include="css\signup.css" />
-    <Content Include="css\Upload.css" />
     <Content Include="forgotpassword.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Images\1.jpg" />

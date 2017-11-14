@@ -12,7 +12,6 @@ namespace ArtGallery
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             if (IsPostBack && FileUploadPicture.PostedFile != null)
             {
                 Boolean fileOK = false;
