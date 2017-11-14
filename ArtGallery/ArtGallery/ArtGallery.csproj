@@ -79,8 +79,10 @@
     <Content Include="css\Contact.css" />
     <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
-    <Content Include="css\MasterPage.css" />
+    <Content Include="css\sellersignup.css" />
     <Content Include="css\signup.css" />
+    <Content Include="css\buyersignup.css" />
+    <Content Include="css\Masterpage.css" />
     <Content Include="css\Upload.css" />
     <Content Include="forgotpassword.aspx" />
     <Content Include="HomePage.aspx" />

@@ -1,71 +1,74 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="buyersignup.aspx.cs" Inherits="ArtGallery.buyersignup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="css/buyersignup.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .auto-style1 {
-            width: 92%;
-            height: 398px;
-        }
-        .auto-style2 {
-            margin-top: 0px;
-        }
-        .auto-style3 {
-            height: 167px;
+            height: 29px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img src="Images/content_2.jpg" width="1349px" height="550px" />
+    <div id="img_scroll">
+    	<h1>WELCOME</h1>
+    	<p>register an account to buy products.</p>
+    </div>
     <div id="content" >
-
-        <br />
-        <table class="auto-style1">
+        <h1>New Customer Information</h1>
+        <h2>Fill up the sign up form to be a part of us.</h2>
+        <table id="form">
             <tr>
                 <td>
-                    <h2 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px;text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Sign Up Now!</h2>
+                   <asp:Label ID="Label1" runat="server" Text="Name <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td style="margin-left: 50px;">
+                    <asp:TextBox ID="TextBoxname" runat="server" CssClass="textbox_style" placeholder="Name as per MyKad"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td id="ic_num" class="auto-style1">
+                    
+                    <asp:Label ID="Label11" runat="server" Text="IC No. <span class='red'>*</span>"></asp:Label>
+                    
+                </td>
+                <td class="auto-style1">
+                    <asp:TextBox ID="TextBox1" runat="server" MaxLength="6" Width="60px" CssClass="textbox_ic" placeholder="XXXXXX"></asp:TextBox>&nbsp;-
+                    <asp:TextBox ID="TextBox2" runat="server" MaxLength="2" Width="30px" CssClass="textbox_ic" placeholder="XX"></asp:TextBox>&nbsp;-
+                    <asp:TextBox ID="TextBox3" runat="server" MaxLength="4" Width="50px" CssClass="textbox_ic" placeholder="XXXX"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <h2 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Create new customer account</h2>
+                    <asp:Label ID="Label2" runat="server" Text="Gender <span class='red'>*</span>"></asp:Label>
                 </td>
-            </tr>
-            <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Name *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxname" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">
-                    <asp:Label ID="Label2" runat="server" Text="Gender"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="auto-style2" Height="55px" Width="221px">
-                        <asp:ListItem>Male</asp:ListItem>
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="radioButtonList" RepeatDirection="Horizontal">
+                        <asp:ListItem Selected="True">Male</asp:ListItem>
                         <asp:ListItem>Female</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label4" runat="server" Text="Street Address *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxaddress" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label4" runat="server" Text="Street Address <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxaddress" runat="server" CssClass="textbox_style" placeholder="Address"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label5" runat="server" Text="Zip / Postal Code *"></asp:Label>
-&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxzipcode" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label5" runat="server" Text="Zip / Postal Code <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxzipcode" runat="server" CssClass="textbox_style" placeholder="Zip / Postal Code"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label6" runat="server" Text="State *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:Label ID="Label6" runat="server" Text="State <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="textbox_style">
                         <asp:ListItem>Perlis</asp:ListItem>
                         <asp:ListItem>Kedah</asp:ListItem>
                         <asp:ListItem>Pulau Pinang</asp:ListItem>
@@ -87,54 +90,51 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label7" runat="server" Text="Contact No. *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxcontactno" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label7" runat="server" Text="Contact No. <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxcontactno" runat="server" CssClass="textbox_style" MaxLength="3" Width="40px" placeHolder="XXX"></asp:TextBox> &nbsp;-
+                    <asp:TextBox ID="TextBox4" runat="server" CssClass="textbox_style" MaxLength="8" placeholder="XXXXXXXX" Width="90px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label8" runat="server" Text="E-mail Address *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxemail" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label8" runat="server" Text="E-mail Address <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxemail" runat="server" CssClass="textbox_style" placeholder="example123@gmail.com"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label9" runat="server" Text="Password *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxpw" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label9" runat="server" Text="Password <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxpw" runat="server" CssClass="textbox_style" TextMode="Password" placeholder="Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label10" runat="server" Text="Confirm Password *"></asp:Label>
-&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxcpw" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label10" runat="server" Text="Confirm Password <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxcpw" runat="server" CssClass="textbox_style" TextMode="Password" placeholder="Confirm password"></asp:TextBox>
+                </td>
+            </tr>
+            <tr style="height: 30px">
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Yes, I agree to the Terms &amp; Conditons <span class='red'>**</span>" />
                 </td>
             </tr>
             <tr>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Label11" runat="server" Text="* Required fields"></asp:Label>
+                <td colspan="2">
+                    <asp:Button ID="Buttonsignup" runat="server" Text="SIGN UP" CssClass="Buttonsignup" />
+                    <asp:Button ID="Buttoncancel" runat="server" Text="CANCEL" CssClass="ButtonCancel" />
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Yes, I agree to the Terms &amp; Conditons **" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Buttoncancel" runat="server" Text="Cancel" style="font-size: 1em; osition: relative; background:red; -moz-border-radius:3px; -webkit-border-radius:3px;	border-radius:3px;	border:1px solid red;cursor:pointer;color:#ffffff; padding:12px 60px;    box-shadow: 2px 2px 10px #6E6E6E;    display: inline-block;"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Buttonsignup" runat="server" Text="Sign Up" style="font-size: 1em;  position: relative;    background:black; -moz-border-radius:3px;
-	-webkit-border-radius:3px; 	border-radius:3px;	border:1px solid black;	cursor:pointer;	color:#ffffff;	padding:12px 60px;    box-shadow: 2px 2px 10px #6E6E6E;    display: inline-block;" />
-                </td>
-            </tr>
-            </table>
-
-        <br />
-s</asp:Content>
+            </tr>            
+        </table>
+    </div>
+</asp:Content>

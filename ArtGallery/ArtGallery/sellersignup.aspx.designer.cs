@@ -31,6 +31,42 @@ namespace ArtGallery {
         protected global::System.Web.UI.WebControls.TextBox TextBoxname;
         
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// TextBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// TextBox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        
+        /// <summary>
+        /// TextBox3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -85,6 +121,15 @@ namespace ArtGallery {
         protected global::System.Web.UI.WebControls.TextBox TextBoxcontactno;
         
         /// <summary>
+        /// TextBox4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        
+        /// <summary>
         /// Label8 control.
         /// </summary>
         /// <remarks>
@@ -130,13 +175,13 @@ namespace ArtGallery {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// TextBoxpw0 control.
+        /// TextBox5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxpw0;
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
         
         /// <summary>
         /// Label12 control.
@@ -292,15 +337,6 @@ namespace ArtGallery {
         protected global::System.Web.UI.WebControls.FileUpload FileUploadpassbook;
         
         /// <summary>
-        /// Label19 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label19;
-        
-        /// <summary>
         /// CheckBox1 control.
         /// </summary>
         /// <remarks>
@@ -310,15 +346,6 @@ namespace ArtGallery {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
         
         /// <summary>
-        /// Buttoncancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Buttoncancel;
-        
-        /// <summary>
         /// Buttonsignup control.
         /// </summary>
         /// <remarks>
@@ -326,5 +353,14 @@ namespace ArtGallery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Buttonsignup;
+        
+        /// <summary>
+        /// Buttoncancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Buttoncancel;
     }
 }

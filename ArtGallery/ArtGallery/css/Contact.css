@@ -1,11 +1,12 @@
-﻿#img_scroll{
+﻿#img_scroll {
     background-image: url('../Images/contact.jpg');
-    height: 550px; 
+    height: 550px;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1349 px 300px;
-	color: white;
+    color: white;
+    width: 1349px;
 }
 
 #img_scroll h1,

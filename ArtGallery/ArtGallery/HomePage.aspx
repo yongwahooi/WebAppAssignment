@@ -49,13 +49,13 @@
 				<h2>ABOUT US</h2>
 				<h3>An interest story that wait you to discover!</h3>
 				<br/><br/>
-				<p><a href="#">READ MORE</a></p>
+				<p><a href="About.aspx">READ MORE</a></p>
 			</div>
 			<div id="img_desc1">
 				<h2>CONTACT US</h2>
 				<h3>Feel free to contact us to let us know about you!</h3>
 				<br/><br/>
-				<p><a href="#">READ MORE</a></p>
+				<p><a href="Contact.aspx">READ MORE</a></p>
 			</div>
 
 			<img id="img1" src="Images/content_4.jpg" width="400px" height="400px" />

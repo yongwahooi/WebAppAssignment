@@ -26,7 +26,7 @@
     <div id="signup_acc">
     	<h2>NEW TO la&middot;Galerie?</h2>
     	<h3>Sign up now to avail our services!</h3>
-        <asp:Button ID="Buttonsignup" runat="server" Text="SIGN UP HERE" CssClass="Buttonsignup" />
+        <asp:Button ID="Buttonsignup" runat="server" Text="SIGN UP HERE" CssClass="Buttonsignup" PostBackUrl="~/signup.aspx" />
     </div>	
     </div>
 </asp:Content>

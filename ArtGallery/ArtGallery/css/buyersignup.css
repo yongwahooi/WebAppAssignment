@@ -1,0 +1,134 @@
+﻿#img_scroll{
+    background-image: url('../Images/signup_1.jpg');
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1349 px 250px;
+	color: white;
+    width: 1349px;
+}
+
+#img_scroll h1,
+#img_scroll p{
+	z-index: 1;
+	margin: 0;
+	padding: 0;	
+	position:absolute;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 5px;
+}
+
+#img_scroll h1{
+	font-size:3em;
+	font-weight:lighter;
+	margin-top: 180px;
+	margin-bottom: 50px;
+}
+
+#img_scroll p{
+	font-size:1.3em;
+	margin-top: 250px;
+}
+
+#content{
+    margin-top: 50px;
+    width: 1349px;
+}
+
+#content h1,
+#content h2{
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+#content hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #999999;
+    padding-top: 50px;
+    padding: 0;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#form{
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+.textbox_style{
+    width: 300px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.radioButtonList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radioButtonList.horizontal li {
+    display: inline;
+}
+
+.radioButtonList label {
+    display: inline;
+}
+
+.textbox_ic {
+    padding-left: 5px;
+    height: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.Buttonsignup {
+    font-size: 1em;
+    position: relative;
+    background: #1AB188;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.2em;
+    margin-right: 15px;
+}
+
+.Buttonsignup:hover {
+    opacity: 1;
+}
+
+.ButtonCancel {
+    font-size: 1em;
+    position: relative;
+    background: #CC0000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 100px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.2em;
+}
+
+ .ButtonCancel:hover {
+        opacity: 1;
+}

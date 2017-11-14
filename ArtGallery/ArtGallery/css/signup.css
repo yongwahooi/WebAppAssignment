@@ -1,11 +1,12 @@
-﻿#img_scroll{
+﻿#img_scroll {
     background-image: url('../Images/signup.jpg');
-    height: 400px; 
+    height: 400px;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1349 px 250px;
-	color: white;
+    color: white;
+    width: 1349px;
 }
 
 #img_scroll h1,

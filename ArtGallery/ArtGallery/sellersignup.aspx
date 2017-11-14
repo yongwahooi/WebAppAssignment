@@ -1,148 +1,177 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="sellersignup.aspx.cs" Inherits="ArtGallery.sellersignup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="css/sellersignup.css" rel="stylesheet" type="text/css" />
+      <script>
+           $(function () {
+                $("#TextBoxcontactno").blur(function () {
+                    debugger;
+                    var inputtxt = $("#TextBoxcontactno").val();
+                    phonenumber(inputtxt);
+                 })
+                 $('form input[name="email"]').blur(function () {
+                    var email = $(this).val();
+                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/igm;
+                    if (re.test(email)) {
+                        $('.msg').hide();
+                        $('.success').show();
+                     } else {
+                        $('.msg').hide();
+                        $('.error').show();
+                     }
+                  })
+          });
+
+            function phonenumber(inputtxt) {
+                var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+                if (inputtxt.match(phoneno)) {
+                     $("#TextBoxemail").text("Valid Phone Number");
+                    return true;
+                 }
+                 else {
+                     $("#TextBoxemail").text("Invalid Phone Number");
+                      return false;
+                 }
+            }
+    </script>
     <style type="text/css">
         .auto-style1 {
-            height: 39px;
+            width: 232px;
         }
         .auto-style2 {
-            height: 36px;
+            height: 25px;
+        }
+        .auto-style3 {
+            width: 232px;
+            height: 37px;
+        }
+        .auto-style4 {
+            height: 37px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img src="Images/signup.jpg" width="1349px" height="350px" />
+    <div id="img_scroll">
+    	<h1>WELCOME</h1>
+    	<p>register an account to make your transactions.</p>
+    </div>
     <div id="content" >
+        <h1>New Seller Information</h1>
+        <h2>Fill up the sign up form to be a part of us.</h2>
+        <table id="form">
+            <tr>
+                <td colspan="2">
+                    <h3>Personal Details</h3>
 
-        <br />
-        <table style="width: 100%;">
+                </td>
+            </tr>
+            <tr  style="border-top: solid 1px black;">
+                <td></td>
+            </tr>
             <tr>
                 <td class="auto-style1">
-                     <h2 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px;text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Sign Up Now!</h2>
-               
-                    </td>
-            </tr>
-            <tr>
-                <td>
-                     <h2 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Create new seller account</h2>
+                    <asp:Label ID="Label1" runat="server" Text="Name <span class='red'>*</span>"></asp:Label>
+                  
+                </td>
+                <td style="margin-left: 50px">
+                    <asp:TextBox ID="TextBoxname" runat="server" CssClass="textbox_style" placeholder="Name as per MyKad"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                <td id="ic_num" class="auto-style1" >
+                    <asp:Label ID="Label3" runat="server" Text="IC No. <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                     <h3 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Seller Information</h3>
+                    <asp:TextBox ID="TextBox1" runat="server" MaxLength="6" Width="60px" CssClass="textbox_ic" placeholder="XXXXXX"></asp:TextBox>&nbsp;-
+                    <asp:TextBox ID="TextBox2" runat="server" MaxLength="2" Width="30px" CssClass="textbox_ic" placeholder="XX"></asp:TextBox>&nbsp;-
+                    <asp:TextBox ID="TextBox3" runat="server" MaxLength="4" Width="50px" CssClass="textbox_ic" placeholder="XXXX"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <asp:Label ID="Label1" runat="server" Text="Name *"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxname" runat="server">Name as per MyKad</asp:TextBox>
+                <td class="auto-style1">
+                    <asp:Label ID="Label2" runat="server" Text="Gender <span class='red'>*</span>"></asp:Label>
                 </td>
-            </tr>
-            <tr>
                 <td>
-                    <asp:Label ID="Label2" runat="server" Text="Gender"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="auto-style2" Height="55px" Width="221px">
-                        <asp:ListItem>Male</asp:ListItem>
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="radioButtonList" RepeatDirection="Horizontal">
+                        <asp:ListItem Selected="True">Male</asp:ListItem>
                         <asp:ListItem>Female</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label11" runat="server" Text="Artist Name <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label11" runat="server" Text="Artist Name *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                    <asp:TextBox ID="TextBoxaname" runat="server"></asp:TextBox>
+                     <asp:TextBox ID="TextBoxaname" runat="server" CssClass="textbox_style" placeholder="Artist Name"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label7" runat="server" Text="Contact No. <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label7" runat="server" Text="Contact No. *"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBoxcontactno" runat="server" Width="177px"></asp:TextBox>
-               <script>
-                   $(function () {
-                       $("#TextBoxcontactno").blur(function () {
-                           debugger;
-                           var inputtxt = $("#TextBoxcontactno").val();
-                           phonenumber(inputtxt);
-                       })
-                       $('form input[name="email"]').blur(function () {
-                           var email = $(this).val();
-                           var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/igm;
-                           if (re.test(email)) {
-                               $('.msg').hide();
-                               $('.success').show();
-                           } else {
-                               $('.msg').hide();
-                               $('.error').show();
-                           }
-                       })
-                   });
-                   function phonenumber(inputtxt) {
-                       var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-                       if (inputtxt.match(phoneno)) {
-                           $("#TextBoxemail").text("Valid Phone Number");
-                           return true;
-                       }
-                       else {
-                           $("#TextBoxemail").text("Invalid Phone Number");
-                           return false;
-                       }
-                   }
-    </script>
-                    </td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="Label8" runat="server" Text="E-mail Address *"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxemail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxcontactno" runat="server" CssClass="textbox_style" MaxLength="3" Width="40px" placeHolder="XXX"></asp:TextBox> &nbsp;-
+                    <asp:TextBox ID="TextBox4" runat="server" CssClass="textbox_style" MaxLength="8" placeholder="XXXXXXXX" Width="90px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label8" runat="server" Text="E-mail Address <span class='red'>*</span>"></asp:Label>
+                </td> 
                 <td>
-                    <asp:Label ID="Label9" runat="server" Text="Password *"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxpw" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxemail" runat="server" CssClass="textbox_style" placeholder="example123@gmail.com"></asp:TextBox>
+                
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label9" runat="server" Text="Password <span class='red'>*</span>"></asp:Label>
+               </td>
                 <td>
-                    <asp:Label ID="Label10" runat="server" Text="Confirm Password *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxpw0" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxpw" runat="server" CssClass="textbox_style" TextMode="Password" placeholder="Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                     <h3 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Business Information</h3>
-
+                <td class="auto-style1">
+                    <asp:Label ID="Label10" runat="server" Text="Confirm Password <span class='red'>*</span>"></asp:Label>
+                </td>                   
+                 <td>
+                    <asp:TextBox ID="TextBox5" runat="server" CssClass="textbox_style" TextMode="Password" placeholder="Confirm Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style1">
+                     <h3>Business Information</h3>
+                </td>
+            </tr>
+            <tr  style="border-top: solid 1px black;">
+                <td></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label12" runat="server" Text="Ship-From Address <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label12" runat="server" Text="Ship-From Address *"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                    <asp:TextBox ID="TextBoxaddress" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxaddress" runat="server" CssClass="textbox_style" placeholder="Ship-From Address"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <asp:Label ID="Label5" runat="server" Text="Zip / Postal Code *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxzipcode" runat="server"></asp:TextBox>
+                <td class="auto-style3">
+                    <asp:Label ID="Label5" runat="server" Text="Zip / Postal Code <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBoxzipcode" runat="server" CssClass="textbox_style" placeholder="Zip / Postal Code"></asp:TextBox>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label6" runat="server" Text="State <span class='red'>*</span>" ></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label6" runat="server" Text="State *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="textbox_style">
                         <asp:ListItem>Perlis</asp:ListItem>
                         <asp:ListItem>Kedah</asp:ListItem>
                         <asp:ListItem>Pulau Pinang</asp:ListItem>
@@ -163,18 +192,22 @@
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style1"></td>
             </tr>
             <tr>
-                <td>
-                        <h3 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Bank Account</h3>                
+                <td colspan="2" class="auto-style2">
+                        <h3>Bank Account</h3>                
                 </td>
             </tr>
+            <tr  style="border-top: solid 1px black;">
+                <td></td>
+            </tr>
             <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label13" runat="server" Text="Bank <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label13" runat="server" Text="Bank *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="DropDownList2" runat="server">
+                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="textbox_style">
                         <asp:ListItem>Affin Bank</asp:ListItem>
                         <asp:ListItem>Alliance Bank</asp:ListItem>
                         <asp:ListItem>Ambank/AmFiance</asp:ListItem>
@@ -196,62 +229,67 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:Label ID="Label14" runat="server" Text="Account Holder's Name *"></asp:Label>
-&nbsp;<asp:TextBox ID="TextBoxaccname" runat="server"></asp:TextBox>
+                <td class="auto-style1">
+                    <asp:Label ID="Label14" runat="server" Text="Account Holder's Name <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                     <asp:TextBox ID="TextBoxaccname" runat="server" CssClass="textbox_style" placeholder="Account Holder's Name"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">
-                    <asp:Label ID="Label15" runat="server" Text="Account No. *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBoxaccno" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label15" runat="server" Text="Account No. <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBoxaccno" runat="server" CssClass="textbox_style" placeholder="Account No."></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Label16" runat="server" Text="All payment will be in bank transfer."></asp:Label>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    <h3 class="mbm ui-borderBottom pbs mam" style="margin: 10px; padding: 0px 0px 5px; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; border-bottom: 1px solid rgb(242, 242, 242) !important; color: rgb(64, 64, 64); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">Required Documents</h3>   
-
+                <td colspan="2">
+                    <asp:Label ID="Label16" runat="server" Text="*All payment will be in bank transfer." CssClass="desc"></asp:Label>
                 </td>
             </tr>
             <tr>
+                <td class="auto-style1">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Required Documents</h3>   
+                </td>
+            </tr>
+            <tr  style="border-top: solid 1px black;">
+                <td></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label17" runat="server" Text="A copy of MyKad/Passport <span class='red'>*</span>"></asp:Label>
+                </td>
                 <td>
-                    <asp:Label ID="Label17" runat="server" Text="A copy of MyKad/Passport *"></asp:Label>
                     <asp:FileUpload ID="FileUploadic" runat="server"  placeholder="Supported file types : jpg, gif, pdf, Max file size: 3MB" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">
-                    <asp:Label ID="Label18" runat="server" Text="A copy of passbook *"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label18" runat="server" Text="A copy of passbook <span class='red'>*</span>"></asp:Label>
+                </td>
+                <td>
                     <asp:FileUpload ID="FileUploadpassbook" runat="server"  placeholder="Supported file types : jpg, gif, pdf, Max file size: 3MB"/>
                 </td>
             </tr>
+            <tr style="height: 30px">
+                <td></td>
+            </tr>
             <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Label19" runat="server" Text="* Required fields"></asp:Label>
+                <td colspan="2">
+                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Yes, I agree to the Terms &amp; Conditons <span class='red'>**</span>" />
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Yes, I agree to the Terms &amp; Conditons **" />
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Buttoncancel" runat="server" Text="Cancel" style="font-size: 1em; osition: relative; background:red; -moz-border-radius:3px; -webkit-border-radius:3px;	border-radius:3px;	border:1px solid red;cursor:pointer;color:#ffffff; padding:12px 60px;    box-shadow: 2px 2px 10px #6E6E6E;    display: inline-block;"/>
-                    <asp:Button ID="Buttonsignup" runat="server" Text="Sign Up" style="font-size: 1em;  position: relative;    background:black; -moz-border-radius:3px;
-	-webkit-border-radius:3px; 	border-radius:3px;	border:1px solid black;	cursor:pointer;	color:#ffffff;	padding:12px 60px;    box-shadow: 2px 2px 10px #6E6E6E;    display: inline-block;" />
-                    &nbsp;</td>
+                <td colspan="2">
+                    <asp:Button ID="Buttonsignup" runat="server" Text="SIGN UP" CssClass="Buttonsignup" />
+                    <asp:Button ID="Buttoncancel" runat="server" Text="CANCEL" CssClass="ButtonCancel" />
+                </td>
             </tr>
         </table>
-        <br />
+    </div>
 </asp:Content>

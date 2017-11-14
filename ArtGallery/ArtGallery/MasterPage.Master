@@ -7,7 +7,7 @@
     <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui-1.11.4.js" type="text/javascript"></script>
     <script src="js/MasterPage.js" type="text/javascript"></script>
-    <link href="css/MasterPage.css" rel="stylesheet" type="text/css" />
+    <link href="css/Masterpage.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="Images/icon.png" />
     <title>laGalerie</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -25,7 +25,7 @@
                 <li><a href="#" id="gallery">GALLERY</a></li>
                 <li><a href="About.aspx" id="about">ABOUT US</a></li>                
                 <li><a href="Contact.aspx" id="contact">CONTACT US</a></li>
-                <li><a href="#" id="login">LOG IN</a></li>
+                <li><a href="AccountLogin.aspx" id="login">LOG IN</a></li>
             </ul>
             <hr id="line" />
         </div>
@@ -43,25 +43,25 @@
 	    </div>
     	<table>
 			<tr>
-	        	<td>SIGN UP</td>
-	            <td>NEWS</td>
+	        	<td><a href="signup.aspx" class="table_a">SIGN UP</a></td>
+	            <td><a href="#" class="table_a">NEWS</a></td>
 	            <td class="td1">CONTACT US</td>
 	        </tr>
 	        <tr>
-	        	<td>FEEDBACK</td>
-	            <td>ARTIST</td>
+	        	<td><a href="Contact.aspx" class="table_a">FEEDBACK</a></td>
+	            <td><a href="#" class="table_a">ARTIST</a></td>
 	            <td class="td1">&#9993; EMAIL</td>
 	            <td>customerservice@lagalerie.com.my</td>
 	        </tr>
 			<tr>
-	        	<td>ABOUT US</td>
-	            <td>GALLERY</td>
+	        	<td><a href="About.aspx" class="table_a">ABOUT US</a></td>
+	            <td><a href="#" class="table_a">Gallery</a></td>
 	            <td class="td1">&#9743; PHONE</td>
 	            <td>+60048232420 (Malaysia)</td>
 	        </tr>
 			<tr>
 	        	<td></td>
-	            <td>GET HELP</td>
+	            <td><a href="Contact.aspx" class="table_a">GET HELP</a></td>
 	            <td class="td1">&#128224; FAX</td>
 	            <td>+60048232420 (Malaysia)</td>
 	        </tr>

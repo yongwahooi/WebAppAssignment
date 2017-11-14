@@ -1,4 +1,4 @@
-﻿$(document).ready(function(){
+﻿$(document).ready(function () {
 	$(window).on("scroll",function(){
   	var wn = $(window).scrollTop();
     if(wn > 150){
@@ -36,4 +36,3 @@
 	});
 
 });
-
