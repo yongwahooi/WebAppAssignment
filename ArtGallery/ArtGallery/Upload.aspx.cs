@@ -7,11 +7,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace ArtGallery
-{
+{   
     public partial class Upload : System.Web.UI.Page
-    {
+    {   
+       
         protected void Page_Load(object sender, EventArgs e)
         {
+            UploadButton.Attributes.Add("onclick", "return false;");
             if (IsPostBack && FileUploadPicture.PostedFile != null)
             {
                 Boolean fileOK = false;

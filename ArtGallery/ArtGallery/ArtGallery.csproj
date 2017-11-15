@@ -131,7 +131,8 @@
     <Content Include="Images\signup_1.jpg" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\twitter_1.png" />
-    <Content Include="Images\uploadImage.png" />
+    <Content Include="Images\uploadImage.jpg" />
+    <Content Include="Images\upload_icon.png" />
     <Content Include="js\AccountLogin.js" />
     <Content Include="js\forgotpassword.js" />
     <Content Include="js\HomePage.js" />

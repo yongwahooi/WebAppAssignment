@@ -13,15 +13,6 @@ namespace ArtGallery {
     public partial class Upload {
         
         /// <summary>
-        /// LabelUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelUpload;
-        
-        /// <summary>
         /// FileUploadPicture control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace ArtGallery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button UploadButton;
-        
-        /// <summary>
-        /// ImageUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageUpload;
         
         /// <summary>
         /// TextBoxTitle control.

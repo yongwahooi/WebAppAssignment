@@ -1,24 +1,90 @@
-﻿body {
+﻿#img_scroll {
+    background-image: url('../Images/uploadImage.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1349 px 250px;
+    color: white;
+    width: 1349px;
 }
 
-input[type=button], input[type=submit]{
-    font-size: 1em;
-    position: relative;
-    background: #1AB188;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    padding: 12px 110px;
-    display: inline-block;
-    margin-top: 40px;
-    opacity: 0.8;
-    width: 400px;
-    height: 50px;
-    letter-spacing: 0.5em;
+    #img_scroll h1,
+    #img_scroll p {
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        letter-spacing: 5px;
+    }
+
+    #img_scroll h1 {
+        font-size: 3em;
+        font-weight: lighter;
+        margin-top: 180px;
+        margin-bottom: 50px;
+    }
+
+    #img_scroll p {
+        font-size: 1.3em;
+        margin-top: 250px;
+    }
+
+#content {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
+.imgUpload {
+    max-height: 300px;
+    max-width: 350px;
+}
+
+.upload_hide {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+}
+
+
+#upload_space {
+    background-image: url('../Images/upload_icon.png');
+    padding: 5px 10px;
+    border: 5px dashed #cccccc;
+    position: relative;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    width: 350px;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+    #upload_space p {
+        position: absolute;
+        top: 320px;
+        left: 50px;
+        color: #b9b8b8;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
 
 input[type=reset] {
     font-size: 1em;
@@ -28,15 +94,14 @@ input[type=reset] {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     border: none;
-    margin-right: 100px;
     cursor: pointer;
     color: white;
     display: inline-block;
     margin-top: 40px;
     opacity: 0.8;
-    width: 400px;
+    width: 350px;
     height: 50px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
 }
 
 input[type=submit]:hover, .ButtonSubmit:hover {
@@ -49,9 +114,7 @@ input[type=reset]:hover {
 
 .fileUpload {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
-    margin: 10px 0px;
 }
 
 .ButtonSubmit {
@@ -68,9 +131,11 @@ input[type=reset]:hover {
     display: inline-block;
     margin-top: 40px;
     opacity: 0.8;
-    width: 400px;
+    width: 350px;
     height: 50px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
+    margin-left: 50px;
+    margin-right: 150px;
 }
 
 input[type=file], textarea, textbox, input[type=text], .DropDownList1 {
@@ -83,4 +148,57 @@ input[type=file], textarea, textbox, input[type=text], .DropDownList1 {
     box-sizing: border-box;
     font-size: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.upload_button {
+    font-size: 1em;
+    position: relative;
+    background: #1AB188;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 12px 110px;
+    display: inline-block;
+    width: 380px;
+    height: 50px;
+    letter-spacing: 0.2em;
+    margin-top: -10px;
+    margin-left: 300px;
+}
+
+#step1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#step1 h1{
+    letter-spacing: 0.1em;
+}
+
+#step1 hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 2px solid gray;
+}
+
+#prod_desc{
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 970px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+#prod_desc hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 2px solid gray;
 }
