@@ -21,7 +21,7 @@ namespace ArtGallery
                 if (FileUploadPicture.HasFile)
                 {
                     string name = Path.GetFileName(FileUploadPicture.PostedFile.FileName);
-                    FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
+                   // FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
 
                     String fileExtension =
                         System.IO.Path.GetExtension(FileUploadPicture.FileName).ToLower();
@@ -68,36 +68,46 @@ namespace ArtGallery
                     sb.Append("')};");
                     sb.Append("</script>");
                     ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+
                 }
+                //Image_InsertItem();
             }
         }
 
-        protected void SubmitButton_Click(object sender, EventArgs e)
-        {
-            if (IsPostBack && FileUploadPicture.PostedFile != null)
-            {
+        //public void Image_InsertItem()
+        //{
+        //    Gallery item = new Gallery();
+        //    item.galName = TextBoxTitle.Text;
+        //    item.galImage[0] = Byte.Parse("131");
+        //    item.galID = "0111";
+        //    item.desription = TextAreaDescription.Text;
+        //    //item.galPrice = Decimal.Parse(TextBoxPrice.Text);
 
-                string name = Path.GetFileName(FileUploadPicture.PostedFile.FileName);
+        //    //TryUpdateModel(item);
+        //    if (ModelState.IsValid)
+        //    {
+        //        // Save changes here
+        //        Database1Entities _db = new Database1Entities();
+        //        _db.Galleries.Add(item);
+        //        //_db.SaveChanges();
+        //        lblUploadStatus.Text = "added to database";
+        //        //Response.Redirect("/ViewBooks.aspx");
+        //    }
+        //}
+        //protected void SubmitButton_Click(object sender, EventArgs e)
+        //{
+        //    if (IsPostBack && FileUploadPicture.PostedFile != null)
+        //    {
+
+        //        string name = Path.GetFileName(FileUploadPicture.PostedFile.FileName);
+
+        //        FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
 
 
-                FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
+        //    }
+
+        //}
 
 
-                // Label1.Text = FileUpload1.FileName;
-
-            }
-
-        }
-            //LinkButton1.Attributes.Add("onClick", "document.getElementById('" + FileUploadPicture.ClientID + "').click();return false;");
-            //TextBoxPrice.Attributes.Add("onblur", "TextBoxPrice_LostFocus(TextBoxPrice.Text);");
-            //System.IO.Stream fs = FileUploadPicture.PostedFile.InputStream;
-            //System.IO.BinaryReader br = new System.IO.BinaryReader(fs);
-            //Byte[] bytes = br.ReadBytes((Int32)fs.Length);
-            //string base64String = Convert.ToBase64String(bytes, 0, bytes.Length);
-            //ImageUpload.ImageUrl = "data:image/png;base64," + base64String;
-            //ImageUpload.Visible = true;
-            //}
-
-
-        }
+    }
 }
