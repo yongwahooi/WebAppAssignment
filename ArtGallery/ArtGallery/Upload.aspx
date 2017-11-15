@@ -111,8 +111,8 @@
                         <asp:ListItem>Other</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:Button ID="ButtonSubmit" CssClass="ButtonSubmit" Text="Submit"  runat="server"  OnClick="Page_Load" > </asp:Button>
-                        <input id="Reset" class="Reset" type="reset" value="Reset" />
+                    <asp:Button ID="ButtonSubmit" CssClass="ButtonSubmit" Text="SUBMIT"  runat="server"  OnClick="Page_Load" > </asp:Button>
+                        <input id="Reset" class="Reset" type="reset" value="RESET" />
                     <br/>
                     <%--<asp:Label ID="lblUploadStatus" runat="server" Text="Label" Font-Size="Medium"></asp:Label>--%>
                 </div>
