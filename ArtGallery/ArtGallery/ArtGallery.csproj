@@ -79,6 +79,7 @@
     <Content Include="css\Contact.css" />
     <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
+    <Content Include="css\News.css" />
     <Content Include="css\sellersignup.css" />
     <Content Include="css\signup.css" />
     <Content Include="css\buyersignup.css" />
@@ -107,6 +108,9 @@
     <Content Include="Images\content_5.jpg" />
     <Content Include="Images\content_img_1.jpg" />
     <Content Include="Images\content_img_2.jpg" />
+    <Content Include="Images\exhibition.jpg" />
+    <Content Include="Images\exhibition_1.jpg" />
+    <Content Include="Images\exhibition_2.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\facebook_1.png" />
     <Content Include="Images\forget_password.jpg" />
@@ -124,6 +128,7 @@
     <Content Include="Images\map_ny.jpg" />
     <Content Include="Images\map_paris.jpg" />
     <Content Include="Images\meeting.jpg" />
+    <Content Include="Images\news.jpg" />
     <Content Include="Images\password_icon.png" />
     <Content Include="Images\password_icon_1.png" />
     <Content Include="Images\seller.jpg" />
@@ -151,6 +156,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="News.aspx" />
     <Content Include="sellersignup.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Upload.aspx" />
@@ -205,6 +211,13 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sellersignup.aspx.cs">

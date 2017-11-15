@@ -20,7 +20,7 @@
 		<div class="nav">
             <ul>
                 <li><a href="HomePage.aspx" id="home">HOME</a></li>
-                <li><a href="#" id="news">NEWS</a></li>
+                <li><a href="News.aspx" id="news">NEWS</a></li>
                 <li><a href="#" id="artist">ARTIST</a></li>
                 <li><a href="#" id="gallery">GALLERY</a></li>
                 <li><a href="About.aspx" id="about">ABOUT US</a></li>                
@@ -44,7 +44,7 @@
     	<table>
 			<tr>
 	        	<td><a href="signup.aspx" class="table_a">SIGN UP</a></td>
-	            <td><a href="#" class="table_a">NEWS</a></td>
+	            <td><a href="News.aspx" class="table_a">NEWS</a></td>
 	            <td class="td1">CONTACT US</td>
 	        </tr>
 	        <tr>
