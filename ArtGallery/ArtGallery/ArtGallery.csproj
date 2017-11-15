@@ -75,7 +75,7 @@
     <Content Include="buyersignup.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\About.css" />
-    <Content Include="css\AccountLogin.css" />
+    <Content Include="css\accLogin.css" />
     <Content Include="css\Contact.css" />
     <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
@@ -133,12 +133,13 @@
     <Content Include="Images\twitter_1.png" />
     <Content Include="Images\uploadImage.jpg" />
     <Content Include="Images\upload_icon.png" />
-    <Content Include="js\AccountLogin.js" />
     <Content Include="js\forgotpassword.js" />
+    <Content Include="js\forgotpw.js" />
     <Content Include="js\HomePage.js" />
     <Content Include="js\jquery-2.2.0.min.js" />
     <Content Include="js\jquery-ui-1.11.4.js" />
     <Content Include="js\MasterPage.js" />
+    <Content Include="js\accLogin.js" />
     <Content Include="js\Upload.js" />
     <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
@@ -228,9 +229,7 @@
       <DependentUpon>Upload.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UploadedImages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

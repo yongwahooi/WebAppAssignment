@@ -1,5 +1,5 @@
 ﻿$(document).ready(function(){
-$('#Email').focus(
+$('.mail').focus(
     function(){
         $(this).parent('div').css('background','url("../Images/login_icon_1.png") no-repeat');
         $(this).parent('div').css('background-size','35px');

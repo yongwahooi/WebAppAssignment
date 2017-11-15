@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AccountLogin.aspx.cs" Inherits="ArtGallery.AccountLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="js/AccountLogin.js" type="text/javascript"></script>
-    <link href="css/AccountLogin.css" rel="stylesheet" type="text/css" />
+    <script src="js/accLogin.js" type="text/javascript"></script>
+    <link href="css/accLogin.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,10 +13,10 @@
     <div id="login_acc">
     	<h2>ALREADY HAVE AN ACCOUNT?</h2>
     	<div id="email_icon">
-           <input name="email" type="email" id="Email" placeholder="E-MAIL ADDRESS"/> 
+            <asp:TextBox ID="email"  placeholder="E-MAIL ADDRESS" CssClass="mail" runat="server"></asp:TextBox>
     	</div>
     	<div id="password_icon">
-            <input id="Password" type="password" placeholder="PASSWORD" />    	
+            <asp:TextBox ID="Password" type="password"  placeholder="PASSWORD" CssClass="pass" runat="server"></asp:TextBox>
     	</div>
     	<br/>
            <asp:HyperLink ID="forget_pw" NavigateUrl="~/forgotpassword.aspx"  runat="server" CssClass="forget_pw" >Forgot password?</asp:HyperLink>

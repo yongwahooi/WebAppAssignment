@@ -22,8 +22,6 @@ namespace ArtGallery
                 {
                     string name = Path.GetFileName(FileUploadPicture.PostedFile.FileName);
                     FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
-                    ImageUpload.ImageUrl = FileUploadPicture.FileName;
-                    ImageUpload.Visible = true;
 
                     String fileExtension =
                         System.IO.Path.GetExtension(FileUploadPicture.FileName).ToLower();
@@ -85,8 +83,6 @@ namespace ArtGallery
                 FileUploadPicture.SaveAs(Server.MapPath("~/" + name));
 
 
-                ImageUpload.ImageUrl = FileUploadPicture.FileName;
-                ImageUpload.Visible = true;
                 // Label1.Text = FileUpload1.FileName;
 
             }
