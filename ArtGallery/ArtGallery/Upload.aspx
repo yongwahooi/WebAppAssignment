@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="ArtGallery.Upload" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_Seller.Master" AutoEventWireup="true" CodeBehind="Upload.aspx.cs" Inherits="ArtGallery.Upload" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="js/Upload.js" type="text/javascript"></script>
     <link href="css/Upload.css" rel="stylesheet" type="text/css" />

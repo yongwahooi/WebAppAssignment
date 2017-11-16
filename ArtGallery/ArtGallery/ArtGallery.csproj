@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="About_B.aspx" />
+    <Content Include="About_S.aspx" />
     <Content Include="AccountLogin.aspx" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
@@ -74,19 +76,27 @@
     </Content>
     <Content Include="buyersignup.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Contact_B.aspx" />
+    <Content Include="Contact_S.aspx" />
     <Content Include="css\About.css" />
     <Content Include="css\accLogin.css" />
     <Content Include="css\Contact.css" />
+    <Content Include="css\editBuyer.css" />
+    <Content Include="css\editSeller.css" />
     <Content Include="css\forgotpassword.css" />
     <Content Include="css\HomePage.css" />
+    <Content Include="css\MasterPageAfter.css" />
     <Content Include="css\News.css" />
     <Content Include="css\sellersignup.css" />
     <Content Include="css\signup.css" />
     <Content Include="css\buyersignup.css" />
-    <Content Include="css\Masterpage.css" />
     <Content Include="css\Upload.css" />
+    <Content Include="editbuyer.aspx" />
+    <Content Include="editseller.aspx" />
     <Content Include="forgotpassword.aspx" />
     <Content Include="HomePage.aspx" />
+    <Content Include="HomePage_B.aspx" />
+    <Content Include="HomePage_S.aspx" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
     <Content Include="Images\3.jpg" />
@@ -108,6 +118,8 @@
     <Content Include="Images\content_5.jpg" />
     <Content Include="Images\content_img_1.jpg" />
     <Content Include="Images\content_img_2.jpg" />
+    <Content Include="Images\edit1.jpg" />
+    <Content Include="Images\edit2.jpg" />
     <Content Include="Images\exhibition.jpg" />
     <Content Include="Images\exhibition_1.jpg" />
     <Content Include="Images\exhibition_2.jpg" />
@@ -141,12 +153,14 @@
     <Content Include="js\forgotpassword.js" />
     <Content Include="js\forgotpw.js" />
     <Content Include="js\HomePage.js" />
+    <Content Include="js\MasterPageAfter.js" />
     <Content Include="js\jquery-2.2.0.min.js" />
     <Content Include="js\jquery-ui-1.11.4.js" />
-    <Content Include="js\MasterPage.js" />
     <Content Include="js\accLogin.js" />
     <Content Include="js\Upload.js" />
     <Content Include="MasterPage.Master" />
+    <Content Include="MasterPage_Buyer.Master" />
+    <Content Include="MasterPage_Seller.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -157,6 +171,68 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="News.aspx" />
+    <Content Include="News_B.aspx" />
+    <Content Include="News_S.aspx" />
+    <Content Include="photo\1.jpg" />
+    <Content Include="photo\10.jpg" />
+    <Content Include="photo\11.jpg" />
+    <Content Include="photo\12.jpg" />
+    <Content Include="photo\13.jpg" />
+    <Content Include="photo\14.jpg" />
+    <Content Include="photo\15.jpg" />
+    <Content Include="photo\16.jpg" />
+    <Content Include="photo\17.jpg" />
+    <Content Include="photo\18.jpg" />
+    <Content Include="photo\19.jpg" />
+    <Content Include="photo\2.jpg" />
+    <Content Include="photo\20.jpg" />
+    <Content Include="photo\21.jpg" />
+    <Content Include="photo\22.jpg" />
+    <Content Include="photo\23.jpg" />
+    <Content Include="photo\24.jpg" />
+    <Content Include="photo\25.jpg" />
+    <Content Include="photo\26.jpg" />
+    <Content Include="photo\27.jpg" />
+    <Content Include="photo\28.jpg" />
+    <Content Include="photo\29.jpg" />
+    <Content Include="photo\3.jpg" />
+    <Content Include="photo\30.jpg" />
+    <Content Include="photo\31.jpg" />
+    <Content Include="photo\32.jpg" />
+    <Content Include="photo\33.jpg" />
+    <Content Include="photo\34.jpg" />
+    <Content Include="photo\35.png" />
+    <Content Include="photo\36.jpg" />
+    <Content Include="photo\37.jpg" />
+    <Content Include="photo\38.jpg" />
+    <Content Include="photo\39.jpg" />
+    <Content Include="photo\4.jpg" />
+    <Content Include="photo\40.jpg" />
+    <Content Include="photo\41.jpg" />
+    <Content Include="photo\42.jpg" />
+    <Content Include="photo\43.jpg" />
+    <Content Include="photo\44.jpg" />
+    <Content Include="photo\45.jpg" />
+    <Content Include="photo\46.jpg" />
+    <Content Include="photo\47.jpg" />
+    <Content Include="photo\48.jpg" />
+    <Content Include="photo\49.jpg" />
+    <Content Include="photo\5.jpg" />
+    <Content Include="photo\50.jpg" />
+    <Content Include="photo\51.jpg" />
+    <Content Include="photo\52.jpg" />
+    <Content Include="photo\53.jpg" />
+    <Content Include="photo\54.jpg" />
+    <Content Include="photo\55.jpeg" />
+    <Content Include="photo\56.png" />
+    <Content Include="photo\57.jpg" />
+    <Content Include="photo\58.jpg" />
+    <Content Include="photo\59.jpg" />
+    <Content Include="photo\6.jpg" />
+    <Content Include="photo\60.jpg" />
+    <Content Include="photo\7.jpg" />
+    <Content Include="photo\8.jpg" />
+    <Content Include="photo\9.jpg" />
     <Content Include="sellersignup.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Upload.aspx" />
@@ -169,6 +245,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_B.aspx.cs">
+      <DependentUpon>About_B.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_B.aspx.designer.cs">
+      <DependentUpon>About_B.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_S.aspx.cs">
+      <DependentUpon>About_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_S.aspx.designer.cs">
+      <DependentUpon>About_S.aspx</DependentUpon>
     </Compile>
     <Compile Include="AccountLogin.aspx.cs">
       <DependentUpon>AccountLogin.aspx</DependentUpon>
@@ -191,6 +281,34 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contact_B.aspx.cs">
+      <DependentUpon>Contact_B.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact_B.aspx.designer.cs">
+      <DependentUpon>Contact_B.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_S.aspx.cs">
+      <DependentUpon>Contact_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact_S.aspx.designer.cs">
+      <DependentUpon>Contact_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editbuyer.aspx.cs">
+      <DependentUpon>editbuyer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editbuyer.aspx.designer.cs">
+      <DependentUpon>editbuyer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editseller.aspx.cs">
+      <DependentUpon>editseller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editseller.aspx.designer.cs">
+      <DependentUpon>editseller.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forgotpassword.aspx.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,6 +323,20 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomePage_B.aspx.cs">
+      <DependentUpon>HomePage_B.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage_B.aspx.designer.cs">
+      <DependentUpon>HomePage_B.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage_S.aspx.cs">
+      <DependentUpon>HomePage_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage_S.aspx.designer.cs">
+      <DependentUpon>HomePage_S.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -212,12 +344,40 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="MasterPage_Buyer.Master.cs">
+      <DependentUpon>MasterPage_Buyer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_Buyer.Master.designer.cs">
+      <DependentUpon>MasterPage_Buyer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage_Seller.Master.cs">
+      <DependentUpon>MasterPage_Seller.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_Seller.Master.designer.cs">
+      <DependentUpon>MasterPage_Seller.Master</DependentUpon>
+    </Compile>
     <Compile Include="News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News_B.aspx.cs">
+      <DependentUpon>News_B.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News_B.aspx.designer.cs">
+      <DependentUpon>News_B.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News_S.aspx.cs">
+      <DependentUpon>News_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News_S.aspx.designer.cs">
+      <DependentUpon>News_S.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sellersignup.aspx.cs">

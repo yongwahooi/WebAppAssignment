@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="ArtGallery.HomePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_Buyer.Master" AutoEventWireup="true" CodeBehind="HomePage_B.aspx.cs" Inherits="ArtGallery.HomePage_B" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="js/HomePage.js" type="text/javascript"></script>
     <link href="css/HomePage.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
 	    		<h2>New Events and Exhibitions</h2>
 	    		<h2>Available Now.</h2>
 	    		<hr />
-	    		<p><a href="News.aspx">FIND OUT MORE</a></p>
+	    		<p><a href="News_B.aspx">FIND OUT MORE</a></p>
     		</div>
 			<img src="Images/content_2.jpg" width="1349px" height="550px" />
 			<h1>WHAT WE HAVE...</h1>
@@ -49,13 +49,13 @@
 				<h2>ABOUT US</h2>
 				<h3>An interest story that wait you to discover!</h3>
 				<br/><br/>
-				<p><a href="About.aspx">READ MORE</a></p>
+				<p><a href="About_B.aspx">READ MORE</a></p>
 			</div>
 			<div id="img_desc1">
 				<h2>CONTACT US</h2>
 				<h3>Feel free to contact us to let us know about you!</h3>
 				<br/><br/>
-				<p><a href="Contact.aspx">READ MORE</a></p>
+				<p><a href="Contact_B.aspx">READ MORE</a></p>
 			</div>
 
 			<img id="img1" src="Images/content_4.jpg" width="400px" height="400px" />

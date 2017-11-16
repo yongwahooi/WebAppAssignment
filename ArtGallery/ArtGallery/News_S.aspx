@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="ArtGallery.News" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_Seller.Master" AutoEventWireup="true" CodeBehind="News_S.aspx.cs" Inherits="ArtGallery.News_S" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/News.css" rel="stylesheet" type="text/css" />
 </asp:Content>

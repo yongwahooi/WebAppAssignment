@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ArtGallery.MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_Seller.master.cs" Inherits="ArtGallery.MasterPage_Seller" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
     <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui-1.11.4.js" type="text/javascript"></script>
     <script src="js/MasterPageAfter.js" type="text/javascript"></script>
-    <link href="css/MasterPageAfter.css" rel="stylesheet" type="text/css" />
+    <link href="css/MasterpageAfter.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="Images/icon.png" />
     <title>laGalerie</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -19,13 +19,20 @@
 		<img id="logo" src="Images/logo.png"/>	
 		<div class="nav">
             <ul>
-                <li><a href="HomePage.aspx" id="home">HOME</a></li>
-                <li><a href="News.aspx" id="news">NEWS</a></li>
+                <li><a href="HomePage_S.aspx" id="home">HOME</a></li>
+                <li><a href="News_S.aspx" id="news">NEWS</a></li>
                 <li><a href="#" id="artist">ARTIST</a></li>
                 <li><a href="#" id="gallery">GALLERY</a></li>
-                <li><a href="About.aspx" id="about">ABOUT US</a></li>                
-                <li><a href="Contact.aspx" id="contact">CONTACT US</a></li>
-                <li><a href="AccountLogin.aspx" id="login">LOG IN</a></li>
+                <li><a href="About_S.aspx" id="about">ABOUT US</a></li>                
+                <li><a href="Contact_S.aspx" id="contact">CONTACT US</a></li>
+                <li id="profile"><a href="#" id="my_profile">MY PROFILE</a>
+                    <ul>
+                        <li><a href="editseller.aspx" id="edit_profile" class="drop_down">Edit Profile</a></li>
+                        <li><a href="#" id="wishlist" class="drop_down">My Wishlist</a></li>
+                        <li><a href="Upload.aspx" id="upload_arts" class="drop_down">Upload Arts</a></li>
+                        <li><a href="HomePage.aspx" id="log_out" class="drop_down">Log Out</a></li>
+                    </ul>
+                </li>
             </ul>
             <hr id="line" />
         </div>
@@ -43,18 +50,18 @@
 	    </div>
     	<table>
 			<tr>
-	        	<td><a href="signup.aspx" class="table_a">SIGN UP</a></td>
-	            <td><a href="News.aspx" class="table_a">NEWS</a></td>
+	        	<td><a href="#" class="table_a" onclick="unable();">SIGN UP</a></td>
+	            <td><a href="News_S.aspx" class="table_a">NEWS</a></td>
 	            <td class="td1">CONTACT US</td>
 	        </tr>
 	        <tr>
-	        	<td><a href="Contact.aspx" class="table_a">FEEDBACK</a></td>
+	        	<td><a href="Contact_S.aspx" class="table_a">FEEDBACK</a></td>
 	            <td><a href="#" class="table_a">ARTIST</a></td>
 	            <td class="td1">&#9993; EMAIL</td>
 	            <td>customerservice@lagalerie.com.my</td>
 	        </tr>
 			<tr>
-	        	<td><a href="About.aspx" class="table_a">ABOUT US</a></td>
+	        	<td><a href="About_S.aspx" class="table_a">ABOUT US</a></td>
 	            <td><a href="#" class="table_a">Gallery</a></td>
 	            <td class="td1">&#9743; PHONE</td>
 	            <td>+60 048232420 (Malaysia)</td>
